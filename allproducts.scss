@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,600;1,400;1,700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+.contaiiner{
+  max-width: 1280px;
+  margin: 0 auto ;
+}
+p{
+  &:hover{
+    cursor: pointer;
+  }
+}
+.navbar{
+  position: fixed !important;
+  width: 100%;
+  background-color: #FFFFFF;
+  top: 0;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 20px 0px 16px 0px;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  .left{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+  }
+.logo{
+margin-right: 10px;
+}
+  .katalog_poisk{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    #katalog{
+    display: flex ;align-items: center;
+
+      cursor: pointer;
+      margin-right: 16px;
+      background-color: #70C05B;
+      a{
+        text-decoration: none;
+        padding: 8px;
+        display: flex;
+align-items: center;
+text-align: center;
+
+/* Main/onSecondary */
+
+color: #FFFFFF;
+      }
+
+      }
+      img{
+        padding: 8px;
+      }
+  }
+  
+  .poisk{
+    display: flex ;align-items: center;
+
+    position: relative;
+input{
+  padding: 8px;
+  width: 360px;
+  border: 1px solid #70C05B;
+}
+img{
+  position: absolute;
+  right: 2%;
+}
+  }
+  .menu-elements{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    .like,.product,.korzina{
+      margin-right: 24px;
+      img{
+        transition: .5s;
+        &:hover{
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+  .aleksey{
+    display: flex;align-items: center !important;
+    img{
+      margin-right: 10px;
+    }
+  }
+}
+#dropdown{
+  display: none;
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+#drop{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 40px;
+  padding: 16px 0px;
+  .div{
+    p{
+      padding: 24px 0px;
+      font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+
+/* Main/onSurface */
+
+color: #414141;
+
+&:hover{
+  color: #FF6633;
+
+}
+/* Main/onSurface */
+
+color: #414141;
+
+    }
+  }
+}
+.navbar2{
+   position: fixed !important;
+  bottom: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  display: none;
+  z-index: 9999;
+}
+.navbar2__body{
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+.div1{
+  background-color: #FBF8EC;
+  padding-top: 72px;
+}
+.div1__body{
+  padding-top: 80px;
+  padding-bottom: 40px;
+  .kards{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    .kard{
+      background-color: white;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+position: relative;
+.like{
+position: absolute;
+top: 8px;
+right: 8px;
+}
+.pdd{
+  padding: 8px;
+}
+.main-button{
+  &:hover{
+    color: #FFFFFF;
+    background: #FF6633;
+    border: 1px solid #FF6633;
+  }
+  transition: .5s;
+  margin-top: 10px;
+  font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+/* Main/Secondary */
+background-color: transparent;
+border: 1px solid #70C05B;
+padding: 8px;
+border-radius: 4px;
+width: 100%;
+color: #70C05B;
+}
+.zvezda{
+  
+  img{
+    margin-right: 4px;
+  }
+}
+      p{
+        display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+        font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+padding-top: 8px;
+/* Main/onSurface */
+
+color: #414141;
+
+      }
+      .flex{
+        h5{
+          font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+
+/* Main/onSurface */
+
+color: #414141;
+
+/* identical to box height, or 18px */
+
+
+/* Grayscale / Light */
+
+color: #BFBFBF;
+
+
+        }
+      }
+      .ovqat{
+        width: 100%;
+      }
+      .flex1{
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        h6{
+          font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+
+/* Main/onSurface */
+
+color: #414141;
+        }
+        p{
+          font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+display: flex;
+align-items: center;
+
+/* Grayscale / Hardest */
+
+color: #606060;
+        }
+      }
+    }
+  }
+.flex{
+  display: flex;
+  justify-content: space-between;
+  h3{
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 150%;
+/* identical to box height, or 54px */
+
+
+/* Main/onSurface */
+
+color: #414141;
+
+  }
+  button{
+    a{
+      text-decoration: none;
+color: #606060;
+
+    }
+    transition: .5s;
+    a:hover{
+      color: #FF6633;
+    }
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Grayscale / Hardest */
+border: none;
+background-color: transparent;
+color: #606060;
+  }
+}
+}
+footer {
+    background-image: url(../../img/footer.png);
+    // margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background: #F9F4E2;
+
+    .futer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .f-1 {
+            display: flex;
+            align-items: center;
+
+            .left {
+                margin-left: 30px;
+                margin-bottom: -10px;
+
+                a {
+                    font-family: 'Rubik';
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #414141;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #70C05B;
+                    }
+                }
+            }
+        }
+
+        .f-2 {
+            display: flex;
+            align-items: center;
+
+            .left {
+                margin-left: 20px;
+            }
+
+            img:hover {
+                cursor: pointer;
+            }
+        }
+
+        .f-3 {
+            .f-33 {
+                display: flex;
+
+                .dizayn {
+                    margin-right: 10px;
+                }
+
+                .raqam {
+                    margin-left: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        color: #70C05B;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1117px){
+.menu-elements{
+  margin-right: 10px !important;
+  .like,.product,.korzina{
+    margin-right: 10px !important;
+  }
+}
+}
+@media(max-width:1045px){
+  .aleksey{
+    p{
+      display: none;
+    }
+  }
+}
+@media(max-width:983px){
+  .katalog_poisk{
+    margin-right: 10px !important;
+    input{
+      width: 100% !important;
+    }
+  }
+}
+@media (max-width: 818px) {
+    footer {
+        .futer {
+            flex-direction: column;
+
+            .f-1 {
+                flex-direction: column;
+
+                .left {
+                    margin-left: 0px !important;
+                    margin-top: 20px;
+                }
+
+            }
+        }
+    }
+}
+ @media(max-width:721px){
+.left{
+  margin-right: 10px !important;
+  .sever{
+    display: none !important;
+  }
+}
+}
+@media(max-width:685px){
+  #katalog{
+    p{
+    display: none !important;  
+    }
+  }
+}
+@media(max-width:587px){
+  #drop{
+    grid-template-columns: 1fr 1fr !important;
+    grid-column-gap: 20px !important;
+  }
+}
+@media(max-width:550px){
+  .menu-elements,.aleksey,#katalog{
+display: none !important; 
+  }
+  #dropdown{
+    #drop{
+      grid-template-columns: 1fr !important;
+      .div{
+        p{
+          text-align: center !important;
+          padding:  10px !important;
+        }
+      }
+    }
+  }
+  .navbar2{
+    display: block;
+  }
+  .katalog_poisk{
+    input{
+      width: 75vw !important;
+    }
+  }
+}

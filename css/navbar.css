@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 1208px;
+  margin: 0 auto !important;
+  padding: 10px;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #FFFFFF;
+  top: 0;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav .left {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.nav .logo {
+  margin-right: 10px;
+}
+.nav .katalog_poisk {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+.nav .katalog_poisk #katalog {
+  cursor: pointer;
+  margin-right: 16px;
+  background-color: #70C05B;
+}
+.nav .katalog_poisk #katalog p {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* Main/onSecondary */
+  color: #FFFFFF;
+}
+.nav .katalog_poisk img {
+  padding: 8px;
+}
+.nav .poisk, .nav #katalog {
+  display: flex;
+  align-items: center;
+}
+.nav .poisk {
+  position: relative;
+}
+.nav .poisk input {
+  padding: 8px;
+  width: 360px;
+  border: 1px solid #70C05B;
+}
+.nav .poisk img {
+  position: absolute;
+  right: 2%;
+}
+.nav .menu-elements {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.nav .menu-elements .like, .nav .menu-elements .product, .nav .menu-elements .korzina {
+  margin-right: 24px;
+}
+.nav .menu-elements .like img, .nav .menu-elements .product img, .nav .menu-elements .korzina img {
+  transition: 0.5s;
+}
+.nav .menu-elements .like img:hover, .nav .menu-elements .product img:hover, .nav .menu-elements .korzina img:hover {
+  transform: translateY(-5px);
+}
+.nav .aleksey {
+  display: flex;
+  align-items: center;
+}
+.nav .aleksey img {
+  margin-right: 10px;
+}
+
+#dropdown {
+  display: none;
+}
+
+#drop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  padding: 16px 0px;
+}
+#drop .div p {
+  padding: 24px 0px;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  /* Main/onSurface */
+  color: #414141;
+  /* Main/onSurface */
+  color: #414141;
+}
+#drop .div p:hover {
+  color: #FF6633;
+}
+
+.navbar2 {
+  position: fixed;
+  bottom: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  display: none;
+}
+
+.navbar2__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+@media (max-width: 1117px) {
+  .menu-elements {
+    margin-right: 10px !important;
+  }
+  .menu-elements .like, .menu-elements .product, .menu-elements .korzina {
+    margin-right: 10px !important;
+  }
+}
+@media (max-width: 1045px) {
+  .aleksey p {
+    display: none;
+  }
+}
+@media (max-width: 983px) {
+  .katalog_poisk {
+    margin-right: 10px !important;
+  }
+  .katalog_poisk input {
+    width: 100% !important;
+  }
+}
+@media (max-width: 721px) {
+  .left {
+    margin-right: 10px !important;
+  }
+  .left .sever {
+    display: none !important;
+  }
+}
+@media (max-width: 685px) {
+  #katalog p {
+    display: none !important;
+  }
+}
+@media (max-width: 587px) {
+  #drop {
+    grid-template-columns: 1fr 1fr !important;
+    grid-column-gap: 20px !important;
+  }
+}
+@media (max-width: 550px) {
+  .menu-elements, .aleksey, #katalog {
+    display: none !important;
+  }
+  #dropdown #drop {
+    grid-template-columns: 1fr !important;
+  }
+  #dropdown #drop .div p {
+    text-align: center !important;
+    padding: 10px !important;
+  }
+  .navbar2 {
+    display: block;
+  }
+  .katalog_poisk input {
+    width: 75vw !important;
+  }
+}
